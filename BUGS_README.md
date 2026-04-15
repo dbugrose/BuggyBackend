@@ -147,13 +147,6 @@ builder.Services.AddSwaggerGen();
   ``` 
 
 
-**Bug 17**:
-**Location**: `Post Members`
-**Type**: logic, should be an empty list as opposed to a list with a default 0 in it
- ```csharp
-      
-  ``` 
-
 **Bug 17-20**:
 **Location**: `MemberRepository Lines 21-23`
 **Type**: logic, borrowedbookids should be initialized
