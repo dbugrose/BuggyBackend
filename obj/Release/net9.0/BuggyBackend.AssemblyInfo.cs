@@ -11,9 +11,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("BuggyBackend")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+083f300b758f0d2603cdf0267be70f54694b0c3d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BuggyBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BuggyBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

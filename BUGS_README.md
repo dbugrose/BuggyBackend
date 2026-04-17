@@ -1,3 +1,7 @@
+Darcy Rose
+
+4/17/26
+
 # Library System API - Bug Documentation
 
 This is a buggy Library Management System API built with .NET and n-tier architecture. The system contains **20 intentional bugs** across different layers (Models, Repositories, Services, Controllers, and Configuration).
@@ -146,7 +150,6 @@ builder.Services.AddSwaggerGen();
                 .Where(t => t.BorrowDate < overdueDate)
   ``` 
 
-
 **Bug 17-20**:
 **Location**: `MemberRepository Lines 21-23`
 **Type**: logic, borrowedbookids should be initialized
@@ -156,5 +159,20 @@ builder.Services.AddSwaggerGen();
                 new Member { Id = 3, Name = "Ken Martinez", Email = "jmartenezlopez@sjcoe.net", MembershipDate = DateTime.Now.AddMonths(-6) }   
   ``` 
 
+
+**Bug 21**:
+**Location**: `Post Members`
+**Type**: logic, users populates with a 0, should be empty
+ ```csharp
+{
+  "id": 0,
+  "name": "string",
+  "email": "string",
+  "membershipDate": "2026-04-15T16:00:36.452Z",
+  "borrowedBookIds": [
+    0
+  ]
+}
+  ``` 
 
 
